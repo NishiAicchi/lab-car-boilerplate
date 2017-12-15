@@ -1,1 +1,40 @@
 /* Los estilos de tu proyecto */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navigator {
+    background-color: #ffffff;
+    border: none;
+    margin: 15px;
+}
+.logo {
+    padding: 6px;
+    margin: 6px;
+}
+.mobile-menu {
+    font-size: 34px;
+    display: flex;
+    float: right;
+    position: relative;
+    padding: 4px;
+    margin: 4px;
+}
+.desktop-menu {
+    list-style: none;
+    text-align: center;
+}
+.desktop-menu a {
+    text-decoration: none;
+    color: black;
+    padding: 10px; 
+}
+.bkgr-1 {
+    background-image: url('../assets/images/taxi.jpg');
+    background-position: 10% 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 543px;
+    margin: 0;
+}
