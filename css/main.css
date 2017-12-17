@@ -1,6 +1,7 @@
 /* Los estilos de tu proyecto */
 * {
     box-sizing: border-box;
+    font-size: 1em;
     margin: 0;
     padding: 0;
 }
@@ -10,87 +11,101 @@
     margin: 15px;
 }
 .logo {
-    padding: 6px;
-    margin: 6px;
+    padding: 0.5em;
+    margin: 0.5em;
 }
 .mobile-menu {
     font-size: 34px;
     display: flex;
     float: right;
     position: relative;
-    padding: 4px;
-    margin: 4px;
+    padding: 9px 10px;
+    margin-top: 18px;
+    margin-left: 15px;
+    margin-bottom: 8px;
 }
 .desktop-menu {
     list-style: none;
     text-align: center;
+    margin-top: 20px;
 }
 .desktop-menu a {
     text-decoration: none;
     color: black;
     padding: 10px; 
 }
-.city {
+.app-download {
+    align-items: center;
     background-image: url('../assets/images/taxi.jpg');
-    background-position: 10% 90%;
+    background-position-y: -95em;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 543px;
-    margin: 0;
+    background-size: 100%;
+    display: flex;
+    min-height: 90vh;
+}
+.bkgr-color {
+    background-color: #f7b617;
 }
 .aside {
-    background-color: #f7b617;
-    color: #ffffff;
-    height: 242px;
-    padding-top: 2em;
-    padding-bottom: 2em;
+    height: 42vh;
+    width: 85vw;
+    padding-top: 1em;
+    padding-bottom: 1em;
     padding-left: 3em;  
     position: relative;
-    top: 150px;
-}
-.aside-logo {
-    width: 25%;
+    left: 7.5vw;
 }
 .btn-1 {
     background-color: #ffffff;
     border: none;
-    border-radius: 5px;
-    font-size: 20px;
-    padding: 10px;
+    border-radius: 4px;
     color: #000;
-}
-.al {
-            
+    font-size: 20px;
+    font-weight: normal;    
+    margin-top: 1em;
+    padding: 6px 12px;
+    vertical-align: middle;
 }
 .info {
-    background-color: #f7b617;
-    height: 597px;
-    
+    padding: 2em 1em;
 }
-.iphone {
-    position: relative;
-    left: 50px;
-
+.app-border {
+    border:0.2em solid #ffffff;
 }
-.content-app h2 {
-    
-    margin-top: 25%;
+.center {
     text-align: center;
 }
-.driver {
+.text-color {
+    color: #ffffff;
+}
+.app-text {
+    align-content: right;
+    font-size: 1em;
+    padding-right: 9em;
+}
+.driver-register {
     background-image: url('../assets/images/conduce.jpg');
-    background-position: 10% 90%;
+    background-position: 0em -14em;
     background-repeat: no-repeat;
     background-size: cover;
-    height: 543px;
-    margin: 0;
+    height: 90vh;
+}
+.driver-text {
+    background-color: rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    padding: 0 2em;
+    top
+}
+.margin {
+    margin-top: 20px;
+    margin-bottom: 10px;
 }
 .btn-2 {
-    background-color: #f7b617;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     font-size: 20px;
-    padding: 10px;
+    padding: 6px 12px;
     color: #ffffff;
 }
 .rates {
@@ -122,9 +137,23 @@
     top: 200px;
     color: #ffffff;
 }
-
-
-
+ /* Media queries*/
+@media screen and (min-width: 319px) {
+    .app-download {
+    background-position: 0;
+    max-height: 90vh;
+    }
+    .driver-register {
+    background-position: 80% 10%;
+    }
+}
+@media screen and (max-width: 992px) {
+    .driver-text {
+        height: 30vh;
+        padding: 0 5em 0 1 em;
+        top: 15em;
+    }
+}
 
 /* Google Maps */
 .map {
