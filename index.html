@@ -88,44 +88,54 @@
         </div>
     </section>
     <!-- Cuarto elemento: registro del conductor -->
-    <section class="driver-register driver">
+    <section class="driver-register">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12 ">
-                    <div class="content-driver">
-                        <h4>Conduce cuando quieras</h4>
-                        <p>LabCar es una opción flexible para alcanzar tus metas financieras.</p>
-                        <button type="submit" class="btn-2">Conviértete en conductor</button>
-                    </div>
+                <div class="col-xs-12 col-md-4 col-md-offset-8 col-lg-8 col-lg-offset-4 driver-text ">
+                    <h3 class="text-color margin">Conduce cuando quieras</h3>
+                    <p class="text-color">LabCar es una opción flexible para alcanzar tus metas financieras.</p>
+                    <button type="button" class="btn-2 bkgr-color margin" name="button">Conviértete en conductor</button>
                 </div>
             </div>
         </div>
     </section>
     <!-- quinto elemento: tarifas -->
-    <section class="rates">
+    <section class="rates bkgr-color info">
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
-                    <h4>Tarifas</h4>
-                    <p>Consulta las tarifas LabCar aquí</p>
-                    <span class="glyphicon glyphicon-record"></span>
-                    <input type="text" name="dir-init" id="first-checkbox"> <br><br>
-                    <span class="glyphicon glyphicon-send"></span>
-                    <input type="text" name="dir-final" id="last-checkbox">
-                    <br><br>
-                    <button disabled="disabled" type="button" class="btn-1">¡Trazar Ruta!</button>
-                    <br>
-                    <br>
-                    <div id="map" class="map">
-
-                    </div>
+                <div class="col-xs-12 col-lg-6">
+                    <form class="form-horizontal">
+                        <h2>Tarifas</h2>
+                        <p>Consulta las tarifas LabCar aquí</p>
+                        <div class="form-group">
+                            <span class="col-xs-2 col-sm-2 glyphicon glyphicon-record"></span>
+                            <div class="col-xs-10 col-sm-6">
+                            <input id="init-point" class="input-border bkgr-color form-control" type="text" placeholder="Ingrese su punto de partida" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <span class="col-xs-2 col-sm-2 glyphicon glyphicon-send"></span>
+                            <div class="col-xs-10 col-sm-6">
+                            <input id="final-point" class="input-border bkgr-color form-control" type="text" placeholder="Ingrese su punto de destino" autocomplete="off">
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <div class="col-xs-12 col-sm-10 center-align">
+                            <button type="button" id="rates" class="btn-send btn-1">¡Trazar Ruta!</button>
+                            </div>
+                        </div>
+                    </form>
                 </div>
+            </div>
+            <div class="col-lg-6 col-xs-12">
+                <div class="map-rates">
+                <div id="map" class="map map-box border-map">
             </div>
         </div>
     </section>
     <!-- sexto elemento: pie de pagina -->
-    <footer class="global-options">
-        <div class="container">
+    <footer class="global-options info">
+        <div class="container-fluid">
             <div class="row">
                 <div class="col-xs-offset col-xs-12">
                     <img src="assets/images/logoBlanco.png" alt="">
