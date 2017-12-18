@@ -1,10 +1,32 @@
 /* Los estilos de tu proyecto */
 * {
     box-sizing: border-box;
-    font-size: 1em;
     margin: 0;
     padding: 0;
 }
+body {
+    font-size: 1em;
+}
+/* Clases reutilizables*/
+.bkgr-color {
+    background-color: #f7b617;
+}
+.pd {
+    padding: 2em 1em;
+}
+.app-border {
+    border:0.2em solid #ffffff;
+}
+.center {
+    text-align: center;
+}
+.text-color {
+    color: #ffffff;
+}
+.font-size {
+    font-size: 24px;
+}
+/* Clases Personalizadas */
 .navigator {
     background-color: #ffffff;
     border: none;
@@ -13,6 +35,10 @@
 .logo {
     padding: 0.5em;
     margin: 0.5em;
+}
+.logo-blanco {
+    height: 25%;
+    display: inline-flex;
 }
 .mobile-menu {
     font-size: 34px;
@@ -34,26 +60,25 @@
     color: black;
     padding: 10px; 
 }
+/* segunda sección */
 .app-download {
     align-items: center;
     background-image: url('../assets/images/taxi.jpg');
-    background-position-y: -95em;
+    background-position: 10% 90%;
     background-repeat: no-repeat;
     background-size: 100%;
     display: flex;
-    min-height: 90vh;
-}
-.bkgr-color {
-    background-color: #f7b617;
+    justify-content: flex-end;
+    height: 84vh;
 }
 .aside {
-    height: 42vh;
-    width: 85vw;
+    height: 35vh;
+    width: 80vw;
     padding-top: 1em;
     padding-bottom: 1em;
     padding-left: 3em;  
     position: relative;
-    left: 7.5vw;
+    left: 10vw;
 }
 .btn-1 {
     background-color: #ffffff;
@@ -62,43 +87,43 @@
     color: #000;
     font-size: 20px;
     font-weight: normal;    
-    margin-top: 1em;
+    margin-top: 0.5em;
     padding: 6px 12px;
     vertical-align: middle;
 }
-.info {
-    padding: 2em 1em;
-}
-.app-border {
-    border:0.2em solid #ffffff;
-}
-.center {
-    text-align: center;
-}
-.text-color {
-    color: #ffffff;
+.app-info {
+    padding: 8vw;
+    margin: 1em;
+
 }
 .app-text {
-    align-content: right;
+    display: inline-flex;
     font-size: 1em;
     padding-right: 9em;
 }
 .driver-register {
     background-image: url('../assets/images/conduce.jpg');
-    background-position: 0em -14em;
+    background-position: -29em -14em;
     background-repeat: no-repeat;
-    background-size: cover;
-    height: 90vh;
+    background-size: 175%;
+    height: 55vh;
+}
+.content-driver {
+    position: relative;
+    top: 200px;
+    color: #ffffff;
 }
 .driver-text {
     background-color: rgba(0, 0, 0, 0.3);
     display: flex;
     flex-direction: column;
+    font-size: 18px;
     padding: 0 2em;
+    top: 4em;
 }
 .margin {
     margin-top: 20px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 .btn-2 {
     border: none;
@@ -107,6 +132,7 @@
     padding: 6px 12px;
     color: #ffffff;
 }
+/* quinta sección*/
 .rates {
     background-color: #F7B617;
     color: #ffffff;
@@ -114,9 +140,12 @@
 .input-border {
     border: 0.1em solid #ffffff;
 }
+.input-border::placeholder{
+    color: #ffffff;
+}
 .map-rates {
     border: 0.1em solid #ffffff;
-    padding: 0.5em;
+    padding: 0.4em;
     width: 100%;
 }
 .map-box {
@@ -126,49 +155,65 @@
 .border-map {
     border: 0.2em solid #fff;
 }
+/* sexta sección */
 .global-options {
     background-color: #2b2b2b;
-    padding: 2em;
+} 
+.global-details {
+    display: inline-block;
+    padding: 1em;
+    font-size: 22px;
 }
-.options {
+.options{
     list-style: none;
 }
 .options a {
-    outline: 1px solid white;
+    text-decoration: none;
 }
-.sprite { 
-    background: url('sprite.png');
-    background-repeat: no-repeat top left; 
-    width: 32px; 
-    height: 32px;  
-} 
 .social {
     list-style: none;
     display: inline-flex;
 }
-.content-driver {
-    position: relative;
-    top: 200px;
-    color: #ffffff;
-}
- /* Media queries*/
-@media screen and (min-width: 319px) {
-    .app-download {
-    background-position: 0;
-    max-height: 90vh;
-    }
-    .driver-register {
-    background-position: 80% 10%;
-    }
-}
-@media screen and (max-width: 992px) {
-    .driver-text {
-        height: 30vh;
-        padding: 0 5em 0 1 em;
-        top: 15em;
-    }
+.play-store, .app-store {
+    width: 9em;
+    padding: 1em 0;
 }
 
+ /* Media queries*/
+@media (min-width: 767px) {
+    .app-download {
+        background-position-y: -55em;
+        height: 95vh;
+    }
+    .aside{
+        height: 40vh;
+    }
+    .app-text {
+        padding-right: 7em;
+        font-size: 1.5em;
+        display: inline-flex;
+        text-justify: initial;
+    }
+    .driver-register {
+        background-position: -25em -14em;
+        background-size: 135%;
+        height: 80vh;
+    }
+    .driver-text {
+        top: 8em;
+    }
+}
+@media (min-width: 992px) {
+    .app-text {
+        padding-right: 9em;
+        font-size: 1.5em;
+        display: inline-flex;
+    }
+    .app-info {
+        height: 42vh;
+    }
+    
+}
 /* Google Maps */
 .map {
     width: 100%;
