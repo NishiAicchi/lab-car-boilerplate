@@ -28,7 +28,7 @@
                             <ul class="desktop-menu nav navbar-nav navbar-right font-size" role="tablist">
                             <li><a href="#">Viaja</a></li>
                             <li><a href="#">Conduce</a></li>
-                            <li id="new-user"><a href="#">Inicia Sesión</a></li>
+                            <li id="new-user"><a href="#myModal" data-toggle="modal">Inicia Sesión</a></li>
                             </ul>
                         </div>
                     </div>
@@ -36,6 +36,24 @@
             </div>
         </nav>
     </header>
+    <!-- modal: inicio de sesion-->
+    <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>    
+                    <h3 class="modal-title">Inicia Sesión</h3>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <input type="text" name="usser" id="usser" placeholder="Ingresa tu usuario">
+                        <input type="text" name="password" id="password" placeholder="Ingresa tu contraseña">
+                    </form>
+                    <button type="submit" value="Iniciar sesión"></button>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- segundo elemento: imagen de fondo y app download -->
     <section class="app-download">
         <div class="container-fluid">

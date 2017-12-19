@@ -216,6 +216,10 @@ body {
         color: grey;
     }
 }
+/*modales*/
+.disabled {
+    display: none;
+}
 @media (min-width: 992px) {
     .desktop-menu a:hover {
         background-color: grey; 
