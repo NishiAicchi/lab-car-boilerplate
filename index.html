@@ -28,32 +28,40 @@
                             <ul class="desktop-menu nav navbar-nav navbar-right font-size" role="tablist">
                             <li><a href="#">Viaja</a></li>
                             <li><a href="#">Conduce</a></li>
-                            <li id="new-user"><a href="#myModal" data-toggle="modal">Inicia Sesión</a></li>
-                            </ul>
-                        </div>
+                            <li><a href="#" data-toggle="modal" data-target="#myModal">Inicia Sesión</a></li>
+                        </ul>
                     </div>
                 </div>
             </div>
-        </nav>
-    </header>
-    <!-- modal: inicio de sesion-->
-    <div class="modal fade" id="myModal" tabindex="1" role="dialog" aria-labelledby="myModalLabel">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <button type="button" class="close" data-dismiss="modal">&times;</button>    
-                    <h3 class="modal-title">Inicia Sesión</h3>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <input type="text" name="usser" id="usser" placeholder="Ingresa tu usuario">
-                        <input type="text" name="password" id="password" placeholder="Ingresa tu contraseña">
-                    </form>
-                    <button type="submit" value="Iniciar sesión"></button>
-                </div>
+        </div>
+    </nav>
+</header>
+<!-- Primer Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog modal-sm">
+
+        <!-- contenido del modal -->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <span class="pd"><img src="assets/images/LogoForma.png" alt="Logo" class="logo"></span>
+                <h4 class="center font-size">Bienvenido(a)</h4>
+            </div>
+            <div class="modal-body">
+                <form role="form">
+                    <div class="form-group">
+                        <label for="usrname"><span class="glyphicon glyphicon-user"></span>Usuario</label>
+                        <input type="text" class="form-control" id="usrname" placeholder="Ingresa tu usuario o e-mail">
+                    </div>
+                    <div class="form-group">
+                        <label for="psw"><span class="glyphicon glyphicon-eye-close"></span>Contraseña</label>
+                        <input type="text" class="form-control" id="psw" placeholder="Ingresa tu contraseña">
+                    </div>
+                </form>
             </div>
         </div>
     </div>
+</div>
     <!-- segundo elemento: imagen de fondo y app download -->
     <section class="app-download">
         <div class="container-fluid">
