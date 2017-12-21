@@ -78,7 +78,7 @@ body {
     padding-bottom: 1em;
     padding-left: 3em;  
     position: relative;
-    left: 10vw;
+    left: 4.4em;
 }
 .btn-1 {
     background-color: #ffffff;
@@ -186,7 +186,7 @@ body {
 }
 
  /* Media queries*/
-@media (min-width: 767px) {
+@media (min-width: 767px) and (max-width: 991px) {
     .app-download {
         background-position-y: -55em;
         height: 95vh;
@@ -216,21 +216,21 @@ body {
         color: grey;
     }
 }
-/*modales*/
-.disabled {
-    display: none;
-}
-@media (min-width: 992px) {
+@media (min-width: 992px) and (max-width: 1440px) {
     .desktop-menu a:hover {
         background-color: grey; 
     }
     .app-download {
-        background-position-y: -90em;
+        background-position-y: -113em;
+    }
+    .driver-register {
+        background-position-x: -0em;
+        background-position-y: -24em;
     }
     .aside {
         width: 37vw;
         height: 45vh;
-        left: 31.5vw;
+        left: 39.2em;
     }
     .app-text {
         padding-right: 9em;

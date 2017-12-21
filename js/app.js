@@ -1,6 +1,9 @@
 // La funcionalidad de tu proyecto
+
+//JQUERY
 $(document).ready(begin);
 
+//MODALES
 $('#myModal').modal();
 
 

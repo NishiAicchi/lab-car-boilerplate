@@ -38,7 +38,7 @@
 </header>
 <!-- Primer Modal -->
 <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog modal-sm">
+    <div class="modal-dialog">
 
         <!-- contenido del modal -->
         <div class="modal-content">
@@ -56,8 +56,15 @@
                     <div class="form-group">
                         <label for="psw"><span class="glyphicon glyphicon-eye-close"></span>Contraseña</label>
                         <input type="text" class="form-control" id="psw" placeholder="Ingresa tu contraseña">
+                        <div class="checkbox">
+                        <label><input type="checkbox" value="" checked>Mantenme Conectado(a)</label>
+                        </div>
                     </div>
                 </form>
+            </div>
+            <div class="modal-footer">
+                <button type="submit" class="btn-2 bkgr-color">Iniciar</button>
+                <button type="button" class="btn-2 bkgr-color" data-dismiss="modal">Cancelar</button>
             </div>
         </div>
     </div>
